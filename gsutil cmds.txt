@@ -1,0 +1,15 @@
+gsutil mb gs://my-bucket ---> bucket creation
+gsutil mb -c standard -l us-central1 gs://my-gsutil-bucket --> -c standard: Standard storage class//-c standard: Standard storage class
+gsutil ls/list --> list the buckets
+gsutil rb gs://my-bucket --> delete the bucket
+gsutil -m rm -r gs://my-bucket --> force-deletes the bucket and all files inside it
+gsutil cp myfile.txt gs://my-bucket -->Uploads myfile.txt to my-bucket
+gsutil -m cp -r my-folder gs://my-bucket --> Uploads all files inside my-folder
+gsutil cp gs://source-bucket/myfile.txt gs://destination-bucket --> Copies myfile.txt from one bucket to another
+gsutil mv gs://source-bucket/myfile.txt gs://destination-bucket --> Moves myfile.txt from source-bucket → destination-bucket
+gsutil rm gs://my-bucket/myfile.txt -->delete a myfile.txt from bucket
+gsutil -m rm -r gs://my-bucket/* --> Deletes all files in the bucket but keeps the bucket itself
+gsutil du -sh gs://my-bucket --> total size of the bucket
+gsutil du -h gs://my-bucket --> lists all files with their sizes
+gsutil cp C:\Users\GOPINATH\Desktop gs://gopinath052/new-folder/
+gsutil -m mv gs://source-bucket/* gs://destination-bucket/ --> To move all files from source-bucket to destination-bucket
